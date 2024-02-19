@@ -5,7 +5,7 @@
 }
 
 .gamebody {
-    display: flex;
+
     background-color: #AAABB8;
     height: 70vh;
 }
@@ -38,4 +38,56 @@
 a {
     text-decoration: none;
     color: #ECECEC;;
+}
+
+.gameicons{
+    display: flex;
+    justify-content: center;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+}
+.txtcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    color: white;
+}
+
+.gameinfo_result, .gameinfo_description{
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.8px;
+}
+
+.rock, .paper, .scissors{
+    display: flex;
+    font-size: 80px;
+    background-color: #474787;
+    border-radius: 20%;
+    margin: 15px;
+    min-width: 150px;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+#rock, #paper, #scissors{
+    min-width: auto;
+    min-height: 110px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 50vh;
 }
