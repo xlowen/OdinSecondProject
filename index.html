@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Jó Ken Pô</title>
 </head>
 <body>
@@ -15,31 +14,44 @@
     </div>
     <div class="gamebody">
         <div class="txtcontainer">
-            <p class="gameinfo_result">You won!</p>
-            <p class="gameinfo_description">Rock actually beats scissors!</p>
-        </div>
-        <div class="gameicons">
-            <div class="p1icon">?</div>
-            <div class="p2icon">?</div>
+            <p class="gameinfo_result">Pedra, Papel ou Tesoura?</p>
+            <p class="gameinfo_description" id="gameinfo_description">Quem fizer 5 pontos primeiro vence!</p>
         </div>
         <div class="scores">
-            <div class="player">Your score:</div>
-            <div class="computer">Computer score:</div>
+            <div class="playercontainer">
+                <div class="p1icon" id="p1icon">?</div>
+                <div class="player" id="player">Jogador: 0</div>
+                
+            </div>
+            <div class="computercontainer">
+                <div class="p2icon" id="p2icon">?</div>
+                <div class="computer" id="computer">Computador: 0</div>
+            </div>
         </div>
         <div class="choices">
-            <div class="rock">
+            <button class="rock" id="rockBtn">
                 <p id="rock">👊</p>
-            </div>
-            <div class="paper">
+            </button>
+            <button class="paper" id="paperBtn">
                 <p id="paper">✋</p>
-            </div>
-            <div class="scissors">
+            </button>
+            <button class="scissors" id="scissorsBtn">
                 <p id="scissors">✌️</p>
-            </div>
+            </button>
         </div>
     </div>
+
+    <div id="overlay" class="overlay">
+        <div id="endgame">
+            <p id="endmsg"></p>
+            <button id="endbtn">Reiniciar o jogo!</button>
+        </div>
+    </div>
+
+
     <div class="footer">
-        <div class="myself">All rights reserved 2024. <a href="https://github.com/xlowen?tab=repositories">@xlowen</a></div>
+        <div class="myself">Todos os direitos reservados 2024. <a href="https://github.com/xlowen?tab=repositories">@xlowen</a></div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>

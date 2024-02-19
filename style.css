@@ -4,10 +4,9 @@
     border: 0px;
 }
 
-.gamebody {
-
-    background-color: #AAABB8;
-    height: 70vh;
+a {
+    text-decoration: none;
+    color: #ECECEC;;
 }
 
 .header {
@@ -18,37 +17,15 @@
     height: 15vh;
     align-items: center;
     color: #ECECEC;
+    -webkit-text-stroke-color: gray;
+    -webkit-text-stroke-width: 0.8px;
 }
 
-.footer{
-    background-color: #474787;
-    width: auto;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.gamebody {
+    background-color: #AAABB8;
+    height: 75vh;
 }
 
-.myself {
-    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 24px;
-    color: #ECECEC;
-}
-
-a {
-    text-decoration: none;
-    color: #ECECEC;;
-}
-
-.gameicons{
-    display: flex;
-    justify-content: center;
-}
-
-.scores {
-    display: flex;
-    justify-content: center;
-}
 .txtcontainer{
     display: flex;
     flex-direction: column;
@@ -59,17 +36,75 @@ a {
     color: white;
 }
 
-.gameinfo_result, .gameinfo_description{
-    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
+.gameinfo_result{
+    font-family: 'Press Start 2p', Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
     font-weight: 400;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 0.8px;
 }
 
+.gameinfo_description {
+    font-family: Roboto;
+    margin-top: 2vh;
+    font-size: 25px;
+}
+
+.scores{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    min-height: 185.5px;
+}
+.playercontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    min-width: 325px;
+    min-height: 185.5px;
+}
+
+.computercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    min-width: 325px;
+    min-height: 185.5px;
+}
+
+#p1icon, #p2icon {
+    font-family: 'Press Start 2p', Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 70px;
+    min-height: 101px;
+    
+}
+
+.player, .computer{
+    font-family: 'Press Start 2p', Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+    /* -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.5px; */
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 50vh;
+}
+
 .rock, .paper, .scissors{
     display: flex;
-    font-size: 80px;
+    font-size: 106px;
     background-color: #474787;
     border-radius: 20%;
     margin: 15px;
@@ -84,10 +119,70 @@ a {
     min-height: 110px;
 }
 
-.choices {
+.footer{
+    background-color: #474787;
+    width: auto;
+    height: 10vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: auto;
-    width: 50vh;
+    justify-content: center;
 }
+
+.myself {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: #ECECEC;
+}
+
+
+
+.overlay{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+.active {
+    display: block;
+}
+
+#endgame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+#endbtn{
+    font-family: 'press start 2p', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 1;
+    min-height: 15vh;
+    width: 30vh;
+    opacity: 1;
+}
+
+#endmsg {
+    font-family: 'press start 2p', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 1;
+    font-size: 40px;
+    border: 1px solid black;
+    color: white;
+    min-height: 15vh;
+    width: 30vh;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
